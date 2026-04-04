@@ -1,5 +1,4 @@
 import { Box, CardMedia, Typography } from "@mui/material";
-import photo from "../assets/photo.jpeg";
 import theme from "../../styles/theme";
 
 const Home = () => {
@@ -7,7 +6,7 @@ const Home = () => {
     <Box mt={5}>
       <CardMedia
         component="img"
-        src={photo}
+        src={"https://f005.backblazeb2.com/file/susruthaportfolio/photo.jpeg"}
         alt="Profile"
         sx={{
           float: "right",
