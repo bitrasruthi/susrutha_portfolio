@@ -1,5 +1,5 @@
 import { FC, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { Box, CircularProgress } from "@mui/material";
 import { routes } from "./routes";
 import Layout from "../layout";
@@ -17,7 +17,7 @@ const Loader = () => (
 
 const MainRouter: FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Suspense fallback={<Loader />}>
         <Routes>
           {/* Layout Wrapper */}
@@ -32,7 +32,7 @@ const MainRouter: FC = () => {
           </Route>
         </Routes>
       </Suspense>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
