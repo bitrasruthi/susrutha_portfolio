@@ -1,96 +1,140 @@
-import { Box, CardMedia, Typography } from "@mui/material";
+import { Box, Button, CardMedia, Grid, Typography } from "@mui/material";
 import theme from "../../styles/theme";
+import EastIcon from "@mui/icons-material/East";
+import SliderMain from "../components/Slider";
 
 const Home = () => {
   return (
-    <Box mt={5}>
-      <CardMedia
-        component="img"
-        src={"https://f005.backblazeb2.com/file/susruthaportfolio/photo.jpeg"}
-        alt="Profile"
-        sx={{
-          float: "right",
-          width: 300,
-          height: 320,
-          objectFit: "cover",
-          ml: 5,
-          mb: 3,
-          borderRadius: 1,
-        }}
-      />
+    <>
+      <Box sx={{ width: "100%", position: "relative" }}>
+        <CardMedia
+          component="img"
+          src="https://f005.backblazeb2.com/file/susruthaportfolio/banner4.png"
+          alt="Banner"
+          sx={{
+            height: {
+              xs: 220,
+              sm: 320,
+              md: 450,
+              lg: 580,
+            },
+            objectFit: "cover",
+            display: "block",
+            overflow: "hidden",
+          }}
+        />
 
-      <Typography variant="h5" color="secondary.main" gutterBottom>
-        Welcome to my website
-      </Typography>
-
-      <Typography lineHeight={2}>
-        I am a Payments Business Analyst with over 15 years of experience.
-        <br />
-        <br />
-        I decided to run this website as over the years I have become passionate
-        about payments.
-        <br />
-        <br />
-        Especially now, I think that the payment industry is more attractive
-        than ever before.
-        <br />
-        <br />
-        One of the main factors is ISO 20022 – a new standard that has gained
-        momentum.
-        <br />
-        <br />
-        If you would like to contact me, you can do it via my{" "}
-        <a
-          href="https://www.linkedin.com/in/susrutha"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            textDecoration: "none",
-            color: theme.palette.primary.main,
+        <Box
+          className="container"
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "100%",
           }}
         >
-          LinkedIn
-        </a>{" "}
-        account.
-        <br />
-        <br />
-        <strong>What is ISO 20022?</strong>
-        <br />
-        <br />
-        In short, it is a methodology to develop standard messages for all
-        financial areas. You can learn about ISO 20022 in ISO 20022 for dummies.
-        <br />
-        <br />
-        You can also visit the ISO 20022 official website www.iso20022.org.
-        However, visiting the ISO 20022 website is only the starting point.
-        There are many ways ISO 20022-compliant messages are implemented in the
-        market.
-        <br />
-        <br />
-        The way ISO 20022 is used in cross-border payments, high-value payments
-        systems, or retail payment systems varies a lot. The purpose of this
-        website is not to provide a comprehensive course about payments or to
-        explain the basics.
-        <br />
-        <br />
-        It’s more about analysis of the payment messages/schemes/systems which
-        are based on the ISO 20022 standard. I assume that the reader has some
-        basic knowledge about payments.
-        <br />
-        <br />
-        Having said that, I am committed to making things as simple as possible,
-        so they are understandable to a wide audience. As a basis for my
-        analysis, I use publicly available documents and information.
-        <br />
-        <br />
-        Needless to say, the information provided on this website reflects only
-        my personal opinion based on the analyzed documents. If the content of
-        this website helps anyone to become more familiar with the topic of
-        payments, I would be more than happy.
-      </Typography>
+          <Typography
+            variant="h2"
+            color="white"
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 5,
+            }}
+          >
+            MASTER PAYMENTS.
+          </Typography>
+          <Typography
+            variant="h2"
+            color="secondary.main"
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 5,
+            }}
+          >
+            BUILD YOUR FUTURE.
+          </Typography>
 
-      <Box sx={{ clear: "both" }} />
-    </Box>
+          <Typography variant="h6" color="white" fontSize={18}>
+            Become a{" "}
+            <span
+              style={{ color: theme.palette.secondary.main, fontWeight: 700 }}
+            >
+              Top 1%
+            </span>{" "}
+            payments specialist.
+          </Typography>
+
+          <Button
+            disableRipple
+            variant="contained"
+            color="secondary"
+            sx={{ mt: 3 }}
+          >
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+              <Typography
+                sx={{ textTransform: "none", fontSize: 16, fontWeight: 600 }}
+              >
+                Start Your Payments Journey Today
+              </Typography>
+              <EastIcon />
+            </Box>
+          </Button>
+        </Box>
+      </Box>
+      <Box className="container" mt={5}>
+        <Grid container spacing={2} alignItems="center" justifyContent="center">
+          <Grid size={12}></Grid>
+          <Grid size={4}>
+            <CardMedia
+              className="merged-image"
+              component="img"
+              src={
+                "https://f005.backblazeb2.com/file/susruthaportfolio/photo.jpeg"
+              }
+              alt="Profile"
+              sx={{
+                float: "left",
+                width: 300,
+                height: 320,
+                objectFit: "cover",
+                mr: 5,
+                mb: 3,
+                borderRadius: 50,
+                mixBlendMode: "multiply",
+                border: `4px solid ${theme.palette.secondary.main}`,
+              }}
+            />
+          </Grid>
+          <Grid size={8}>
+            <Typography variant="h4" fontWeight={600} mb={2}>
+              ABOUT ME
+            </Typography>
+            <Typography variant="body1" fontSize={16} lineHeight={1.8}>
+              I am a Banking & Payments domain professional with experience
+              working across banking and financial systems. Over the years, I’ve
+              developed a strong passion for the payments domain—especially as
+              it continues to evolve rapidly with new technologies and global
+              standards. Today, the payments industry offers more opportunities
+              than ever, driven by innovations like ISO 20022, real-time
+              payments, and digital banking transformation. Through this
+              platform, my goal is to simplify complex payment concepts and
+              share practical, real-world knowledge that helps others build a
+              strong foundation and grow confidently in the Banking IT and
+              Payments domain.
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+      <Box sx={{ backgroundColor: theme.palette.primary.main, py: 5 }}>
+        <Box className="container" mb={3}>
+          <Typography variant="h4" color="white">
+            What I Offer
+          </Typography>
+          <SliderMain />
+        </Box>
+      </Box>
+    </>
   );
 };
 

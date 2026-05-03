@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { CardMedia } from "@mui/material";
 
 const pages = [
   "Home",
@@ -35,7 +36,7 @@ function Header() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ height: 80 }}>
       <Container maxWidth="xl">
         <Box className="container">
           <Toolbar disableGutters>
@@ -79,23 +80,15 @@ function Header() {
               alignItems={"center"}
               width={"100%"}
             >
-              <Typography
-                variant="h5"
-                noWrap
-                component="a"
-                href="#app-bar-with-responsive-menu"
-                sx={{
-                  // display: { xs: "flex", md: "none" },linked
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".5rem",
-                  color: "inherit",
-                  textDecoration: "none",
-                  fontSize: 20,
-                }}
-              >
-                SUSRUTHA
-              </Typography>
+              <CardMedia
+                component="img"
+                src={
+                  // "https://f005.backblazeb2.com/file/susruthaportfolio/FCP+Logo.png"
+                  "https://f005.backblazeb2.com/file/susruthaportfolio/fcp-full.png"
+                }
+                alt="Logo"
+                sx={{ width: 200, height: 80 }}
+              />
               <Box
                 sx={{
                   display: { xs: "none", md: "flex" },
