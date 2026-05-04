@@ -163,6 +163,20 @@ const Home = () => {
                 knowledge that helps others build a strong foundation and grow
                 confidently in the Banking IT and Payments domain.
               </Typography>
+              <Box display={"flex"} justifyContent={"flex-end"} mt={2}>
+                <CardMedia
+                  component="img"
+                  src="https://f005.backblazeb2.com/file/susruthaportfolio/sign.png"
+                  alt="Signature"
+                  sx={{
+                    width: { xs: 200, md: 300 },
+                    height: 100,
+                    objectFit: "cover",
+                    ml: { xs: 0, md: 5 },
+                    mb: 3,
+                  }}
+                />
+              </Box>
             </Grid>
           </Grid>
         </Box>
