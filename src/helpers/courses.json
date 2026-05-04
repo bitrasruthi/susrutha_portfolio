@@ -1,0 +1,119 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Mastering ISO 20022: The Complete Payments Course",
+      "subtitle": "CBPR+, XML, Core Parties & Real Payment Flows",
+      "description": "Master ISO 20022 payment messages, XML structures, settlement methods, and real-world payment flows used in modern banking.",
+      "duration": "8 hours",
+      "sessionType": "Live Session",
+      "level": "Intermediate",
+      "category": "ISO 20022",
+      "icon": "LanguageIcon",
+      "bannerColor": "#5B3DF5",
+      "mentorMessage": "Meet me in the session — let’s get clarity on topic.",
+      "buttons": {
+        "primary": "Enroll Now",
+        "secondary": "Course Details"
+      },
+      "whatYouWillLearn": [
+        "Master ISO 20022 messages like pain.001, pacs.008, pacs.002, camt.056 and camt.054",
+        "Understand correspondent banking and settlement methods",
+        "Decode XML structures and troubleshoot payment flows",
+        "Learn automated reconciliation techniques used in banking"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "A Beginner's Guide to Cross-Border Payments",
+      "subtitle": "Mastering SWIFT Payments and Cross-Border Transactions",
+      "description": "Learn payment systems, SWIFT network fundamentals, MT messages, payment methods, and ISO 20022 migration.",
+      "duration": "8 hours",
+      "sessionType": "Live Session",
+      "level": "Beginner",
+      "category": "Cross Border Payments",
+      "icon": "PublicIcon",
+      "bannerColor": "#0F4C81",
+      "mentorMessage": "Meet me in the session — let’s get clarity on topic.",
+      "buttons": {
+        "primary": "Enroll Now",
+        "secondary": "Course Details"
+      },
+      "whatYouWillLearn": [
+        "Understand SWIFT payments and cross-border transaction flows",
+        "Learn MT101, MT103, MT202, MT202 COV and MT900 messages",
+        "Understand Direct, Cover and Serial payment methods",
+        "Explore ISO20022 and future payment trends"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Beginner's Guide - SWIFT Message Types - MT and MX ISO 20022",
+      "subtitle": "SWIFT MT/MX Message Flow with Examples & MT vs MX Mapping",
+      "description": "Start your payments journey with SWIFT MT/MX messages, payment basics, ISO 20022 migration, and real message flow examples.",
+      "duration": "8 hours",
+      "sessionType": "Live Session",
+      "level": "Beginner",
+      "category": "SWIFT & ISO 20022",
+      "icon": "HubIcon",
+      "bannerColor": "#1B998B",
+      "mentorMessage": "Meet me in the session — let’s get clarity on topic.",
+      "buttons": {
+        "primary": "Enroll Now",
+        "secondary": "View Syllabus"
+      },
+      "whatYouWillLearn": [
+        "Understand SWIFT FIN, GPA, MT and MX message structures",
+        "Learn MT103 Serial and Cover payment methods",
+        "Understand PACS, PAIN and CAMT ISO 20022 messages",
+        "Learn MT vs MX field mapping and SWIFT GPI innovations"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Introduction to Cross-Border Payments",
+      "subtitle": "Master the Fundamentals of Global Payment Systems",
+      "description": "Learn correspondent banking, SWIFT standards, MT103 flows, foreign exchange concepts, and cross-border payment systems.",
+      "duration": "8 hours",
+      "sessionType": "Live Session",
+      "level": "Beginner",
+      "category": "Cross Border Payments",
+      "icon": "AccountBalanceIcon",
+      "bannerColor": "#E76F51",
+      "mentorMessage": "Meet me in the session — let’s get clarity on topic.",
+      "buttons": {
+        "primary": "Enroll Now",
+        "secondary": "Course Details"
+      },
+      "whatYouWillLearn": [
+        "Understand cross-border payment systems and correspondent banking",
+        "Learn SWIFT message categories and MT103 structure",
+        "Understand foreign exchange and payment flows",
+        "Learn Serial vs Cover payment methods with examples"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Payment Systems, SWIFT Messaging & ISO 20022 – Complete Guide",
+      "subtitle": "Hands-On MT103, MT202 & pacs.008 Simulators",
+      "description": "Practice SWIFT and ISO 20022 message creation with interactive tools, MT→MX mapping, reconciliation and payment investigations.",
+      "duration": "8 hours",
+      "sessionType": "Interactive Workshop",
+      "level": "Beginner to Advanced",
+      "category": "SWIFT & Payments",
+      "icon": "SettingsApplicationsIcon",
+      "bannerColor": "#264653",
+      "mentorMessage": "Meet me in the session — let’s get clarity on topic.",
+      "buttons": {
+        "primary": "Enroll Now",
+        "secondary": "View Tools"
+      },
+      "whatYouWillLearn": [
+        "Build MT103, MT202 and pacs.008 messages using interactive simulators",
+        "Convert MT103 to pacs.008 using MT to MX mapping tools",
+        "Understand SWIFT GPI, reconciliation and payment lifecycle",
+        "Troubleshoot failed transactions and payment exceptions"
+      ]
+    }
+  ]
+}

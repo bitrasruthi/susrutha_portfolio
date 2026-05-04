@@ -7,11 +7,13 @@ import LanguageIcon from "@mui/icons-material/Language";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import DoneIcon from "@mui/icons-material/Done";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
+import courses from "../helpers/courses.json";
 
 type Props = {};
 
 const SliderMain = (props: Props) => {
-  const CourseCard = () => {
+  const data = courses;
+  const CourseCard = ({ course }: { course: any }) => {
     return (
       <Box sx={{ padding: 2 }}>
         <Tooltip
@@ -21,38 +23,18 @@ const SliderMain = (props: Props) => {
               <Typography variant="h6" fontWeight={600}>
                 What you'll learn:
               </Typography>
-              <Box display={"flex"} alignItems="top" mt={1} mb={1}>
-                <DoneIcon sx={{ mr: 1, mt: 0.5 }} />
-                <Typography>
-                  Master all core ISO 20022 payment messages - pain.001,
-                  pain.002, pacs.008, pacs.002, pacs.004, camt.056, camt.029,
-                  camt.054 etc. with complete understanding
-                </Typography>
-              </Box>
-              <Box display={"flex"} alignItems="top" mt={1} mb={1}>
-                <DoneIcon sx={{ mr: 1, mt: 0.5 }} />
-                <Typography>
-                  Understand settlement methods and correspondent banking -
-                  INDA, INGA, COVE, CLRG settlement, nostro/vostro accounts, and
-                  how banks actually move money globally
-                </Typography>
-              </Box>
-              <Box display={"flex"} alignItems="top" mt={1} mb={1}>
-                <DoneIcon sx={{ mr: 1, mt: 0.5 }} />
-                <Typography>
-                  Read and troubleshoot ISO 20022 messages - Decode XML
-                  structure, interpret status codes, fix errors, and understand
-                  complete end-to-end payment flows
-                </Typography>
-              </Box>
-              <Box display={"flex"} alignItems="top" mt={1} mb={1}>
-                <DoneIcon sx={{ mr: 1, mt: 0.5 }} />
-                <Typography>
-                  Apply practical skills immediately - Follow real payment
-                  examples and learn automated reconciliation techniques used in
-                  modern banking
-                </Typography>
-              </Box>
+              {course?.whatYouWillLearn.map((point: string, index: number) => (
+                <Box
+                  display={"flex"}
+                  alignItems="top"
+                  mt={1}
+                  mb={1}
+                  key={index}
+                >
+                  <DoneIcon sx={{ mr: 1, mt: 0.5 }} />
+                  <Typography>{point}</Typography>
+                </Box>
+              ))}
             </Box>
           }
           slotProps={{
@@ -86,9 +68,23 @@ const SliderMain = (props: Props) => {
               }}
             >
               <Box sx={{ display: "flex", alignItems: "top" }}>
-                <LanguageIcon sx={{ mr: 1, mt: 0.5 }} />
-                <Typography variant="h5" fontWeight={600}>
-                  Mastering ISO 20022: The Complete Payments Course
+                <LanguageIcon sx={{ mt: 2.5 }} />
+                <Typography
+                  variant="h5"
+                  fontWeight={600}
+                  sx={{
+                    p: 2,
+                    overflow: "hidden",
+                    display: "-webkit-box",
+                    WebkitBoxOrient: "vertical",
+                    WebkitLineClamp: 3,
+                    textOverflow: "ellipsis",
+                    lineHeight: "1.4em",
+                    maxHeight: "3.2em",
+                    minHeight: "3.2em",
+                  }}
+                >
+                  {course.title}
                 </Typography>
               </Box>
               <Typography
@@ -111,9 +107,21 @@ const SliderMain = (props: Props) => {
                 </Box>
               </Typography>
             </Typography>
-            <Typography sx={{ p: 2 }}>
-              A Practical Guide to ISO 20022: Master CBPR+ messages, XML,
-              Message Schema, Core Parties, and Real Payment Flows
+            <Typography
+              sx={{
+                p: 2,
+                overflow: "hidden",
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: 3,
+                textOverflow: "ellipsis",
+                lineHeight: "1.4em",
+                maxHeight: "2.8em",
+                minHeight: "2.8em",
+                mb: 2,
+              }}
+            >
+              {course.description}
             </Typography>
 
             <Box
@@ -145,24 +153,16 @@ const SliderMain = (props: Props) => {
       </Box>
     );
   };
+
   return (
     <Box sx={{ width: "100%", overflow: "hidden" }}>
       <Slider {...slickSettings}>
-        <div>
-          <CourseCard />
-        </div>{" "}
-        <div>
-          <CourseCard />
-        </div>{" "}
-        <div>
-          <CourseCard />
-        </div>{" "}
-        <div>
-          <CourseCard />
-        </div>{" "}
-        <div>
-          <CourseCard />
-        </div>
+        {data?.courses?.length > 0 &&
+          data?.courses?.map((course: any) => (
+            <div>
+              <CourseCard course={course} />
+            </div>
+          ))}
       </Slider>
     </Box>
   );

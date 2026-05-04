@@ -1,8 +1,8 @@
 export const slickSettings = {
   dots: true,
   infinite: true,
-  speed: 500,
-  autoplay: false,
+  speed: 200,
+  autoplay: true,
   arrows: true,
   slidesToShow: 3,
   slidesToScroll: 1,

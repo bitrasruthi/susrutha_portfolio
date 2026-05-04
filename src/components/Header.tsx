@@ -9,7 +9,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { CardMedia } from "@mui/material";
 
 const pages = [
@@ -89,7 +88,11 @@ function Header() {
                   sx={{ display: { xs: "block", md: "none" } }}
                 >
                   {pages.map((page) => (
-                    <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <MenuItem
+                      key={page}
+                      onClick={handleCloseNavMenu}
+                      disableRipple
+                    >
                       <Typography sx={{ textAlign: "center" }}>
                         {page}
                       </Typography>
@@ -105,6 +108,7 @@ function Header() {
               >
                 {pages.map((page) => (
                   <Button
+                    disableRipple
                     key={page}
                     onClick={handleCloseNavMenu}
                     sx={{
@@ -121,7 +125,6 @@ function Header() {
                   </Button>
                 ))}
               </Box>
-              {/* <LinkedInIcon /> */}
             </Box>
           </Toolbar>
         </Box>
