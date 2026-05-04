@@ -2,6 +2,12 @@ import { Box, Button, CardMedia, Grid, Typography } from "@mui/material";
 import theme from "../../styles/theme";
 import EastIcon from "@mui/icons-material/East";
 import SliderMain from "../components/Slider";
+import learning from "../assets/icons/learning.png";
+import face from "../assets/icons/face.png";
+import guide from "../assets/icons/guide.png";
+import skill from "../assets/icons/skill.png";
+import noCode from "../assets/icons/no-code.png";
+import target from "../assets/icons/target.png";
 
 const Home = () => {
   return (
@@ -93,66 +99,73 @@ const Home = () => {
           </Button>
         </Box>
       </Box>
-      <Box className="container" mt={5} sx={{ mx: { xs: 1, md: 0 } }}>
-        <Grid container spacing={2} alignItems="center" justifyContent="center">
-          <Grid size={12} sx={{ display: { xs: "block", md: "none" } }}>
-            <Typography variant="h4" fontWeight={600} mb={2}>
-              ABOUT ME
-            </Typography>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: { xs: "center", md: "flex-start" },
-              }}
-            >
-              <CardMedia
-                className="merged-image"
-                component="img"
-                src="https://f005.backblazeb2.com/file/susruthaportfolio/photo.jpeg"
-                alt="Profile"
+      <Box className="container">
+        <Box mt={5} sx={{ mx: { xs: 1 } }}>
+          <Grid
+            container
+            spacing={2}
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Grid size={12} sx={{ display: { xs: "block", md: "none" } }}>
+              <Typography variant="h4" fontWeight={600} mb={2}>
+                ABOUT ME
+              </Typography>
+            </Grid>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+              <Box
                 sx={{
-                  width: { xs: 200, md: 300 },
-                  height: { xs: 200, md: 300 },
-                  objectFit: "cover",
-                  mr: { xs: 0, md: 5 },
-                  mb: 3,
-                  borderRadius: 50,
-                  mixBlendMode: "multiply",
-                  border: `4px solid ${theme.palette.secondary.main}`,
+                  display: "flex",
+                  justifyContent: { xs: "center", md: "flex-start" },
                 }}
-              />
-            </Box>
+              >
+                <CardMedia
+                  className="merged-image"
+                  component="img"
+                  src="https://f005.backblazeb2.com/file/susruthaportfolio/photo.jpeg"
+                  alt="Profile"
+                  sx={{
+                    width: { xs: 200, md: 300 },
+                    height: { xs: 200, md: 300 },
+                    objectFit: "cover",
+                    mr: { xs: 0, md: 5 },
+                    mb: 3,
+                    borderRadius: 50,
+                    mixBlendMode: "multiply",
+                    border: `4px solid ${theme.palette.secondary.main}`,
+                  }}
+                />
+              </Box>
+            </Grid>
+            <Grid size={{ xs: 12, sm: 6, md: 8 }}>
+              <Typography
+                variant="h4"
+                fontWeight={600}
+                mb={2}
+                sx={{ display: { xs: "none", md: "block" } }}
+              >
+                ABOUT ME
+              </Typography>
+              <Typography
+                variant="body1"
+                fontSize={{ xs: 12, md: 16 }}
+                lineHeight={1.8}
+              >
+                I am a Banking & Payments domain professional with experience
+                working across banking and financial systems. Over the years,
+                I’ve developed a strong passion for the payments
+                domain—especially as it continues to evolve rapidly with new
+                technologies and global standards. Today, the payments industry
+                offers more opportunities than ever, driven by innovations like
+                ISO 20022, real-time payments, and digital banking
+                transformation. Through this platform, my goal is to simplify
+                complex payment concepts and share practical, real-world
+                knowledge that helps others build a strong foundation and grow
+                confidently in the Banking IT and Payments domain.
+              </Typography>
+            </Grid>
           </Grid>
-          <Grid size={{ xs: 12, sm: 6, md: 8 }}>
-            <Typography
-              variant="h4"
-              fontWeight={600}
-              mb={2}
-              sx={{ display: { xs: "none", md: "block" } }}
-            >
-              ABOUT ME
-            </Typography>
-            <Typography
-              variant="body1"
-              fontSize={{ xs: 12, md: 16 }}
-              lineHeight={1.8}
-            >
-              I am a Banking & Payments domain professional with experience
-              working across banking and financial systems. Over the years, I’ve
-              developed a strong passion for the payments domain—especially as
-              it continues to evolve rapidly with new technologies and global
-              standards. Today, the payments industry offers more opportunities
-              than ever, driven by innovations like ISO 20022, real-time
-              payments, and digital banking transformation. Through this
-              platform, my goal is to simplify complex payment concepts and
-              share practical, real-world knowledge that helps others build a
-              strong foundation and grow confidently in the Banking IT and
-              Payments domain.
-            </Typography>
-          </Grid>
-        </Grid>
+        </Box>
       </Box>
       <Box
         sx={{
@@ -166,6 +179,57 @@ const Home = () => {
             What I Offer
           </Typography>
           <SliderMain />
+        </Box>
+      </Box>
+      <Box className="container">
+        <Box className="container" py={5} sx={{ mx: { xs: 1, md: 0 } }}>
+          <Typography variant="h4" fontWeight={600} mb={5}>
+            Why we are unique?
+          </Typography>
+          <Grid container spacing={2} mt={1}>
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <Box display={"flex"} gap={1} alignItems={"flex-start"} mb={3}>
+                <img src={learning} alt="Learning" width={30} height={30} />
+                <Typography variant="h5" mb={3}>
+                  Clear learning path — no confusion, structured guidance
+                </Typography>
+              </Box>
+              <Box display={"flex"} gap={1} alignItems={"flex-start"} mb={3}>
+                <img src={face} alt="Face" width={30} height={30} />
+                <Typography variant="h5" mb={3}>
+                  Your doubts are addressed during one-to-one sessions
+                </Typography>
+              </Box>
+              <Box display={"flex"} gap={1} alignItems={"flex-start"} mb={3}>
+                <img src={target} alt="Target" width={30} height={30} />
+                <Typography variant="h5" mb={3}>
+                  Focused learning for the banking & payments domain — no need
+                  to search for the scope
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid size={{ xs: 12, sm: 6 }}>
+              <Box display={"flex"} gap={1} alignItems={"flex-start"} mb={3}>
+                <img src={guide} alt="Guide" width={30} height={30} />
+                <Typography variant="h5" mb={3}>
+                  Mentoring and guidance toward payments-focused roles
+                </Typography>
+              </Box>
+              <Box display={"flex"} gap={1} alignItems={"flex-start"} mb={3}>
+                <img src={skill} alt="Skill" width={30} height={30} />
+                <Typography variant="h5" mb={3}>
+                  Designed for those aiming to build skills in banking &
+                  payments
+                </Typography>
+              </Box>
+              <Box display={"flex"} gap={1} alignItems={"flex-start"} mb={3}>
+                <img src={noCode} alt="No Code" width={30} height={30} />
+                <Typography variant="h5" mb={3}>
+                  Simple explanations — no coding required
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     </>

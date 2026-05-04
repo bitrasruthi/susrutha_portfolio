@@ -18,52 +18,54 @@ const pages = [
 const Footer = (props: Props) => {
   return (
     <Box sx={{ backgroundColor: theme.palette.secondary.main }}>
-      <Box className="container" py={4} textAlign={"center"}>
-        <Grid container>
-          <Grid size={4}>
-            <Grid container direction="column" spacing={1} textAlign="left">
-              {pages.slice(0, 4)?.map((page, index) => (
-                <Grid key={index}>
-                  <Typography
-                    color="white"
-                    fontSize={12}
-                    sx={{ cursor: "pointer" }}
-                  >
-                    {page}
-                  </Typography>
-                </Grid>
-              ))}
+      <Box className="container">
+        <Box py={4} textAlign={"center"} sx={{ mx: { xs: 1, md: 0 } }}>
+          <Grid container>
+            <Grid size={4}>
+              <Grid container direction="column" spacing={1} textAlign="left">
+                {pages.slice(0, 4)?.map((page, index) => (
+                  <Grid key={index}>
+                    <Typography
+                      color="white"
+                      fontSize={12}
+                      sx={{ cursor: "pointer" }}
+                    >
+                      {page}
+                    </Typography>
+                  </Grid>
+                ))}
+              </Grid>
             </Grid>
+            <Grid size={4}>
+              <Grid container direction="column" spacing={1} textAlign="left">
+                {pages.slice(4)?.map((page, index) => (
+                  <Grid key={index}>
+                    <Typography
+                      color="white"
+                      fontSize={12}
+                      sx={{ cursor: "pointer" }}
+                    >
+                      {page}
+                    </Typography>
+                  </Grid>
+                ))}
+              </Grid>
             </Grid>
-          <Grid size={4}>
-            <Grid container direction="column" spacing={1} textAlign="left">
-              {pages.slice( 4)?.map((page, index) => (
-                <Grid key={index}>
-                  <Typography
-                    color="white"
-                    fontSize={12}
-                    sx={{ cursor: "pointer" }}
-                  >
-                    {page}
-                  </Typography>
-                </Grid>
-              ))}
-            </Grid>
-          </Grid>
 
-          <Grid
-            size={4}
-            display="flex"
-            justifyContent="left"
-            alignItems="start"
-          >
-            <LinkedInIcon sx={{ color: "white", width: 30, height: 30 }} />
+            <Grid
+              size={4}
+              display="flex"
+              justifyContent="left"
+              alignItems="start"
+            >
+              <LinkedInIcon sx={{ color: "white", width: 30, height: 30 }} />
+            </Grid>
           </Grid>
-        </Grid>
-        <Typography color="#635c5c" fontSize={14}>
-          &copy; {new Date().getFullYear()} Fintech Career Path. All rights
-          reserved.
-        </Typography>
+          <Typography color="#635c5c" fontSize={14} mt={2}>
+            &copy; {new Date().getFullYear()} Fintech Career Path. All rights
+            reserved.
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );

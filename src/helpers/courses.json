@@ -40,10 +40,14 @@
         "secondary": "Course Details"
       },
       "whatYouWillLearn": [
-        "Understand SWIFT payments and cross-border transaction flows",
-        "Learn MT101, MT103, MT202, MT202 COV and MT900 messages",
-        "Understand Direct, Cover and Serial payment methods",
-        "Explore ISO20022 and future payment trends"
+        "Understanding Payment Basics and the Building Blocks of Payments",
+        "Navigating the SWIFT Network: A Comprehensive Guide",
+        "Mastering Payment Methods and SWIFT Message Categories",
+        "Learn real use cases for SWIFT Messages like MT101, MT103, MT202, MT202 COV, MT191, MT192, MT195, MT196, MT199, MT900 and MT910",
+        "Understand Direct, Cover and Serial payment methods with examples",
+        "Preparing for Tomorrow: ISO20022 and Future Trends in Payments",
+        "Payments Interview Guide and Career Resources",
+        "Bonus: ISO20022 Guide and MT to MX Mapping Guide"
       ]
     },
     {
@@ -63,10 +67,17 @@
         "secondary": "View Syllabus"
       },
       "whatYouWillLearn": [
-        "Understand SWIFT FIN, GPA, MT and MX message structures",
-        "Learn MT103 Serial and Cover payment methods",
-        "Understand PACS, PAIN and CAMT ISO 20022 messages",
-        "Learn MT vs MX field mapping and SWIFT GPI innovations"
+        "Learn the Basics of Payment Systems and SWIFT Network Fundamentals",
+        "Understand SWIFT Code, SWIFT FIN and GPA Messages",
+        "Master SWIFT MT Message Structure, Categories and Guidelines",
+        "Learn MT103 Serial and Cover Payment Methods with Message Examples",
+        "Understand MT Category 2 and Category 9 Messages",
+        "Explore SWIFT ISO 20022 MX Messages with End-to-End Message Flows",
+        "Understand Agents and Party Roles in MX Messages",
+        "Learn SWIFT Payment Groups and Migration Timelines",
+        "Understand pacs.008 Message Elements with Detailed Examples",
+        "Learn MT vs MX Field Mapping and Message Transformation",
+        "Explore SWIFT GPI and Latest Developments in Global Payments"
       ]
     },
     {
@@ -86,10 +97,12 @@
         "secondary": "Course Details"
       },
       "whatYouWillLearn": [
-        "Understand cross-border payment systems and correspondent banking",
-        "Learn SWIFT message categories and MT103 structure",
-        "Understand foreign exchange and payment flows",
-        "Learn Serial vs Cover payment methods with examples"
+        "Understand Cross-Border Payments and Global Payment Flows",
+        "Learn the Fundamentals of Correspondent Banking",
+        "Understand How Payment System Models Work",
+        "Explore SWIFT Messages Used in Cross-Border Payments",
+        "Learn the Basics of the Foreign Exchange Market",
+        "Understand Serial and Cover Payment Methods with Practical Examples"
       ]
     },
     {
@@ -109,10 +122,14 @@
         "secondary": "View Tools"
       },
       "whatYouWillLearn": [
-        "Build MT103, MT202 and pacs.008 messages using interactive simulators",
-        "Convert MT103 to pacs.008 using MT to MX mapping tools",
-        "Understand SWIFT GPI, reconciliation and payment lifecycle",
-        "Troubleshoot failed transactions and payment exceptions"
+        "Build Real Payment Messages Using Interactive MT103, MT202 and pacs.008 Simulators",
+        "Simulate MT103 to pacs.008 Conversion with Structured ISO 20022 XML Mapping",
+        "Decode and Interpret SWIFT MT Messages like MT103, MT202, MT940 and MT950",
+        "Understand Global Payment Systems Including Clearing, Settlement and Correspondent Banking",
+        "Gain Hands-On Experience Mapping SWIFT MT Messages to ISO 20022 MX Formats",
+        "Track Payment Lifecycle Events and Reconcile Transactions Using MT910, MT950, camt.053 and camt.054",
+        "Simulate Real-World Payment Investigations and Troubleshoot Failed Transactions",
+        "Learn How SWIFT, ACH, RTGS and FedNow Work in Modern Payment Infrastructure"
       ]
     }
   ]
