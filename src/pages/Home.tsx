@@ -109,7 +109,7 @@ const Home = () => {
           >
             <Grid size={12} sx={{ display: { xs: "block", md: "none" } }}>
               <Typography variant="h4" fontWeight={600} mb={2}>
-                ABOUT ME
+                About Me
               </Typography>
             </Grid>
             <Grid size={{ xs: 12, sm: 6, md: 4 }}>
@@ -144,7 +144,7 @@ const Home = () => {
                 mb={2}
                 sx={{ display: { xs: "none", md: "block" } }}
               >
-                ABOUT ME
+                About Me
               </Typography>
               <Typography
                 variant="body1"
@@ -176,7 +176,7 @@ const Home = () => {
       >
         <Box className="container" mb={3}>
           <Typography variant="h4" color="white">
-            What I Offer
+            What We Offer
           </Typography>
           <SliderMain />
         </Box>
@@ -184,7 +184,7 @@ const Home = () => {
       <Box className="container">
         <Box className="container" py={5} sx={{ mx: { xs: 1, md: 0 } }}>
           <Typography variant="h4" fontWeight={600} mb={5}>
-            Why we are unique?
+            Why We Are Unique?
           </Typography>
           <Grid container spacing={2} mt={1}>
             <Grid size={{ xs: 12, sm: 6 }}>
