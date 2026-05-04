@@ -123,6 +123,23 @@ const SliderMain = (props: Props) => {
             >
               {course.description}
             </Typography>
+            <Box p={1} sx={{ display: { xs: "block", md: "none" } }}>
+              <Typography variant="h6" fontWeight={600}>
+                What you'll learn:
+              </Typography>
+              {course?.whatYouWillLearn.map((point: string, index: number) => (
+                <Box
+                  display={"flex"}
+                  alignItems="top"
+                  mt={1}
+                  mb={1}
+                  key={index}
+                >
+                  <DoneIcon sx={{ mr: 1, mt: 0.5 }} />
+                  <Typography>{point}</Typography>
+                </Box>
+              ))}
+            </Box>
 
             <Box
               sx={{ p: 2, gap: 1, display: "flex", justifyContent: "right" }}
