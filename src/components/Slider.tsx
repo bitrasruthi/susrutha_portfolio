@@ -146,23 +146,25 @@ const SliderMain = (props: Props) => {
     );
   };
   return (
-    <Slider {...slickSettings}>
-      <div>
-        <CourseCard />
-      </div>{" "}
-      <div>
-        <CourseCard />
-      </div>{" "}
-      <div>
-        <CourseCard />
-      </div>{" "}
-      <div>
-        <CourseCard />
-      </div>{" "}
-      <div>
-        <CourseCard />
-      </div>
-    </Slider>
+    <Box sx={{ width: "100%", overflow: "hidden" }}>
+      <Slider {...slickSettings}>
+        <div>
+          <CourseCard />
+        </div>{" "}
+        <div>
+          <CourseCard />
+        </div>{" "}
+        <div>
+          <CourseCard />
+        </div>{" "}
+        <div>
+          <CourseCard />
+        </div>{" "}
+        <div>
+          <CourseCard />
+        </div>
+      </Slider>
+    </Box>
   );
 };
 

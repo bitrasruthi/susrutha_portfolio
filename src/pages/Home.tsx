@@ -31,15 +31,18 @@ const Home = () => {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: "100%",
+            width: { xs: "90%", md: "100%" },
           }}
         >
           <Typography
-            variant="h2"
             color="white"
             sx={{
               fontWeight: 700,
               letterSpacing: 5,
+              fontSize: {
+                xs: 20,
+                lg: 50,
+              },
             }}
           >
             MASTER PAYMENTS.
@@ -50,12 +53,16 @@ const Home = () => {
             sx={{
               fontWeight: 700,
               letterSpacing: 5,
+              fontSize: {
+                xs: 20,
+                lg: 50,
+              },
             }}
           >
             BUILD YOUR FUTURE.
           </Typography>
 
-          <Typography variant="h6" color="white" fontSize={18}>
+          <Typography variant="h6" color="white" fontSize={{ xs: 12, md: 18 }}>
             Become a{" "}
             <span
               style={{ color: theme.palette.secondary.main, fontWeight: 700 }}
@@ -73,7 +80,11 @@ const Home = () => {
           >
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
               <Typography
-                sx={{ textTransform: "none", fontSize: 16, fontWeight: 600 }}
+                sx={{
+                  textTransform: "none",
+                  fontSize: { xs: 12, md: 16 },
+                  fontWeight: 600,
+                }}
               >
                 Start Your Payments Journey Today
               </Typography>
@@ -82,35 +93,52 @@ const Home = () => {
           </Button>
         </Box>
       </Box>
-      <Box className="container" mt={5}>
+      <Box className="container" mt={5} sx={{ mx: { xs: 1, md: 0 } }}>
         <Grid container spacing={2} alignItems="center" justifyContent="center">
-          <Grid size={12}></Grid>
-          <Grid size={4}>
-            <CardMedia
-              className="merged-image"
-              component="img"
-              src={
-                "https://f005.backblazeb2.com/file/susruthaportfolio/photo.jpeg"
-              }
-              alt="Profile"
-              sx={{
-                float: "left",
-                width: 300,
-                height: 320,
-                objectFit: "cover",
-                mr: 5,
-                mb: 3,
-                borderRadius: 50,
-                mixBlendMode: "multiply",
-                border: `4px solid ${theme.palette.secondary.main}`,
-              }}
-            />
-          </Grid>
-          <Grid size={8}>
+          <Grid size={12} sx={{ display: { xs: "block", md: "none" } }}>
             <Typography variant="h4" fontWeight={600} mb={2}>
               ABOUT ME
             </Typography>
-            <Typography variant="body1" fontSize={16} lineHeight={1.8}>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 6, md: 4 }}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { xs: "center", md: "flex-start" },
+              }}
+            >
+              <CardMedia
+                className="merged-image"
+                component="img"
+                src="https://f005.backblazeb2.com/file/susruthaportfolio/photo.jpeg"
+                alt="Profile"
+                sx={{
+                  width: { xs: 200, md: 300 },
+                  height: { xs: 200, md: 300 },
+                  objectFit: "cover",
+                  mr: { xs: 0, md: 5 },
+                  mb: 3,
+                  borderRadius: 50,
+                  mixBlendMode: "multiply",
+                  border: `4px solid ${theme.palette.secondary.main}`,
+                }}
+              />
+            </Box>
+          </Grid>
+          <Grid size={{ xs: 12, sm: 6, md: 8 }}>
+            <Typography
+              variant="h4"
+              fontWeight={600}
+              mb={2}
+              sx={{ display: { xs: "none", md: "block" } }}
+            >
+              ABOUT ME
+            </Typography>
+            <Typography
+              variant="body1"
+              fontSize={{ xs: 12, md: 16 }}
+              lineHeight={1.8}
+            >
               I am a Banking & Payments domain professional with experience
               working across banking and financial systems. Over the years, I’ve
               developed a strong passion for the payments domain—especially as
@@ -126,7 +154,13 @@ const Home = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ backgroundColor: theme.palette.primary.main, py: 5 }}>
+      <Box
+        sx={{
+          backgroundColor: theme.palette.primary.main,
+          py: 5,
+          px: { xs: 1, md: 0 },
+        }}
+      >
         <Box className="container" mb={3}>
           <Typography variant="h4" color="white">
             What I Offer
