@@ -3,3 +3,12 @@ export interface IRoutes {
   layout: React.ComponentType<any>;
   path?: string;
 }
+
+export interface RegisterFormInterface {
+  fullName: string;
+  email: string;
+  phone: string;
+  currentStatus: number;
+  yearsOfExp: number;
+  courseId: number;
+}

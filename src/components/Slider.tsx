@@ -8,11 +8,20 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import DoneIcon from "@mui/icons-material/Done";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import courses from "../helpers/courses.json";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import MuiDialog from "./MuiDialog";
+import RegisterForm from "../pages/Forms/RegisterForm";
+import { useNavigate } from "react-router-dom";
 
 type Props = {};
 
+const expertIds = [1, 5];
+
 const SliderMain = (props: Props) => {
   const data = courses;
+  const [openDialog, setOpenDialog] = React.useState<any>({ isOpen: false });
+  const [selectedCourse, setSelectedCourse] = React.useState<any>();
+  const history = useNavigate();
   const CourseCard = ({ course }: { course: any }) => {
     return (
       <Box sx={{ padding: 2 }}>
@@ -54,7 +63,27 @@ const SliderMain = (props: Props) => {
           }}
           placement="right"
         >
-          <Card>
+          <Card sx={{ position: "relative" }}>
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                backgroundColor: expertIds?.includes(course.id)
+                  ? theme.palette.primary.main
+                  : theme.palette.secondary.main,
+                color: "white",
+                px: 1,
+                py: 0.5,
+                borderBottomRightRadius: 30,
+              }}
+            >
+              <Typography variant="h6" fontWeight={600} pr={2}>
+                {expertIds?.includes(course.id)
+                  ? "Core Concepts"
+                  : "Beginner Friendly"}
+              </Typography>
+            </Box>
             <Typography
               variant="h5"
               fontWeight={600}
@@ -67,7 +96,7 @@ const SliderMain = (props: Props) => {
                 borderRadius: 1,
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "top" }}>
+              <Box sx={{ display: "flex", alignItems: "top", mt: 2 }}>
                 <LanguageIcon sx={{ mt: 2.5 }} />
                 <Typography
                   variant="h5"
@@ -142,27 +171,45 @@ const SliderMain = (props: Props) => {
             </Box>
 
             <Box
-              sx={{ p: 2, gap: 1, display: "flex", justifyContent: "right" }}
+              sx={{
+                p: 2,
+                gap: 1,
+                display: { xs: "block", md: "flex" },
+                justifyContent: "right",
+              }}
             >
               <Button
                 variant="outlined"
+                fullWidth
                 sx={{
                   borderColor: "secondary.light",
                   color: "secondary.light",
                   fontWeight: 600,
+                  mb:{xs: 1, md: 0}
+                }}
+                onClick={() => {
+                  history(`/course-details/${course.id}`);
                 }}
               >
                 Course Details
               </Button>
               <Button
                 variant="contained"
+                fullWidth
                 sx={{
                   backgroundColor: "secondary.light",
                   color: "white",
                   fontWeight: 600,
                 }}
+                onClick={() => {
+                  setOpenDialog({ isOpen: true, title: "Register" });
+                  setSelectedCourse(course);
+                }}
               >
-                Enroll Now
+                <Box display={"flex"} alignItems="center" gap={1}>
+                  <ThumbUpIcon />
+                  <Typography variant="button">Interested</Typography>
+                </Box>
               </Button>
             </Box>
           </Card>
@@ -181,6 +228,25 @@ const SliderMain = (props: Props) => {
             </div>
           ))}
       </Slider>
+      {openDialog?.isOpen && (
+        <MuiDialog
+          openDialog={openDialog}
+          setOpenDialog={setOpenDialog}
+          actions={
+            <Button
+              type="submit"
+              form="register-form"
+              variant="contained"
+              fullWidth
+              sx={{ height: 40, width: 200 }}
+            >
+              Submit
+            </Button>
+          }
+        >
+          <RegisterForm courseId={selectedCourse?.id} />
+        </MuiDialog>
+      )}
     </Box>
   );
 };

@@ -8,8 +8,12 @@ import guide from "../assets/icons/guide.png";
 import skill from "../assets/icons/skill.png";
 import noCode from "../assets/icons/no-code.png";
 import target from "../assets/icons/target.png";
+import MuiDialog from "../components/MuiDialog";
+import RegisterForm from "./Forms/RegisterForm";
+import React from "react";
 
 const Home = () => {
+  const [openDialog, setOpenDialog] = React.useState<any>({ isOpen: false });
   return (
     <>
       <Box sx={{ width: "100%", position: "relative" }}>
@@ -91,15 +95,18 @@ const Home = () => {
                   fontSize: { xs: 12, md: 16 },
                   fontWeight: 600,
                 }}
+                onClick={() => {
+                  setOpenDialog({ isOpen: true, title: "Register" });
+                }}
               >
-                Start Your Payments Journey Today
+                Start Your Payments Journey With Us
               </Typography>
               <EastIcon />
             </Box>
           </Button>
         </Box>
       </Box>
-      <Box className="container">
+      <Box className={"container scroll-to-profile"}>
         <Box mt={5} sx={{ mx: { xs: 1 } }}>
           <Grid
             container
@@ -246,6 +253,25 @@ const Home = () => {
           </Grid>
         </Box>
       </Box>
+      {openDialog?.isOpen && (
+        <MuiDialog
+          openDialog={openDialog}
+          setOpenDialog={setOpenDialog}
+          actions={
+            <Button
+              type="submit"
+              form="register-form"
+              variant="contained"
+              fullWidth
+              sx={{ height: 40, width: 200 }}
+            >
+              Submit
+            </Button>
+          }
+        >
+          <RegisterForm />
+        </MuiDialog>
+      )}
     </>
   );
 };

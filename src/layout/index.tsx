@@ -2,15 +2,19 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import { Box } from "@mui/material";
 import Footer from "../components/Footer";
+import Subheader from "../components/Subheader";
 
 const Layout = () => {
   return (
     <>
       <Header />
+      <Subheader />
       <Box>
         <Outlet />
       </Box>
-      <Footer />
+      <Box>
+        <Footer />
+      </Box>
     </>
   );
 };

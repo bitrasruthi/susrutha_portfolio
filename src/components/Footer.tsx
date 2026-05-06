@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, IconButton, Typography } from "@mui/material";
 import React from "react";
 import theme from "../../styles/theme";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -58,7 +58,19 @@ const Footer = (props: Props) => {
               justifyContent="left"
               alignItems="start"
             >
-              <LinkedInIcon sx={{ color: "white", width: 30, height: 30 }} />
+              <IconButton
+                disableRipple
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/in/susrutha-b-41558517b",
+                    "_blank",
+                  );
+                }}
+              >
+                <LinkedInIcon
+                  sx={{ color: "#0B61BA", width: 50, height: 50 }}
+                />
+              </IconButton>
             </Grid>
           </Grid>
           <Typography color="#635c5c" fontSize={14} mt={2}>
