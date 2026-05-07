@@ -70,3 +70,12 @@ html {
   background: #FFF;
   border-radius: 10px;
 }
+
+.course-content{
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.course-content h2,
+.course-content h3 {
+  color: #01112D !important;
+}

@@ -26,3 +26,10 @@ export const slickSettings = {
     },
   ],
 };
+
+export const htmlMarkup = (html: any) => {
+  return {
+    // __html: DOMPurify.sanitize(html),
+    __html: html,
+  };
+};

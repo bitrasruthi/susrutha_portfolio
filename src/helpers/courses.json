@@ -4,6 +4,7 @@
       "id": 1,
       "title": "Mastering ISO 20022: The Complete Payments Course",
       "subtitle": "CBPR+, XML, Core Parties & Real Payment Flows",
+      "contentSubTitle": "Master ISO 20022 payment messaging, SWIFT MT formats, and real-world cross-border payment flows used in modern banking systems.",
       "description": "Master ISO 20022 payment messages, XML structures, settlement methods, and real-world payment flows used in modern banking.",
       "duration": "8 hours",
       "sessionType": "Live Session",
@@ -21,12 +22,62 @@
         "Understand correspondent banking and settlement methods",
         "Decode XML structures and troubleshoot payment flows",
         "Learn automated reconciliation techniques used in banking"
+      ],
+      "courseData": [
+        {
+          "title": "Mastering ISO 20022 Overview",
+          "points": [
+            "Master ISO 20022 payment messages and CBPR+ standards",
+            "Understand XML-based financial messaging structure",
+            "Learn real-world payment flows used in modern banking",
+            "Gain clarity on core ISO 20022 concepts and migration"
+          ]
+        },
+        {
+          "title": "ISO 20022 Message Types",
+          "points": [
+            "pain.001 – Customer Credit Transfer Initiation",
+            "pacs.008 – FI Customer Credit Transfer",
+            "pacs.002 – Payment Status Report",
+            "camt.053 – Bank Statement Message",
+            "camt.054 – Credit/Debit Notification",
+            "camt.056 – Payment Cancellation Request"
+          ]
+        },
+        {
+          "title": "Core Banking & Payment Flow",
+          "points": [
+            "Understand correspondent banking structure",
+            "Learn clearing and settlement mechanisms",
+            "Track end-to-end payment lifecycle",
+            "Understand roles of banks in payment chain"
+          ]
+        },
+        {
+          "title": "XML Structure & Validation",
+          "points": [
+            "Understand ISO 20022 XML structure",
+            "Learn message validation rules",
+            "Identify common XML errors in payments",
+            "Decode tags, nodes and hierarchy in messages"
+          ]
+        },
+        {
+          "title": "Reconciliation & Troubleshooting",
+          "points": [
+            "Automated reconciliation techniques in banking",
+            "Use camt messages for reconciliation",
+            "Identify failed payment reasons",
+            "Troubleshoot SWIFT and ISO message issues"
+          ]
+        }
       ]
     },
     {
       "id": 2,
       "title": "A Beginner's Guide to Cross-Border Payments",
       "subtitle": "Mastering SWIFT Payments and Cross-Border Transactions",
+      "contentSubTitle": "Mastering SWIFT Payments and Cross-Border Transactions, Payments Basics, Payment Methods, Understanding How Money Moves.",
       "description": "Learn payment systems, SWIFT network fundamentals, MT messages, payment methods, and ISO 20022 migration.",
       "duration": "8 hours",
       "sessionType": "Live Session",
@@ -48,12 +99,97 @@
         "Preparing for Tomorrow: ISO20022 and Future Trends in Payments",
         "Payments Interview Guide and Career Resources",
         "Bonus: ISO20022 Guide and MT to MX Mapping Guide"
+      ],
+
+      "courseData": [
+        {
+          "title": "1. Introduction to SWIFT",
+          "points": [
+            "Introduction",
+            "SWIFT, SWIFTNet and SWIFT Code / BIC",
+            "SWIFT FIN and GPA Messages and MT Message Structure",
+            "SWIFT Message Categories and Rules / Guidelines",
+            "Try out this mini interview on SWIFT"
+          ]
+        },
+        {
+          "title": "2. Payments Flow Basics",
+          "points": [
+            "What is Clearing, Settlement and Messaging?",
+            "Correspondent Accounts and RMA"
+          ]
+        },
+        {
+          "title": "3. SWIFT MT Messages – Core Concepts",
+          "points": [
+            "Cat 1 – MT101 and MT102",
+            "MT103 – Overview of Serial and Cover Methods",
+            "MT103 Cover Method Example",
+            "MT103 Serial Method Example",
+            "Cat 2 Messages",
+            "Cat 9 Messages",
+            "SWIFT GPA Messages / Possible Duplicate Emission / Message Retrieval"
+          ]
+        },
+        {
+          "title": "4. Message Flow Understanding",
+          "points": [
+            "Understanding Message Flows 1",
+            "Understanding Message Flows 2",
+            "Understanding Message Flows 3",
+            "Understanding Message Flows 4"
+          ]
+        },
+        {
+          "title": "5. Message Processing & Structure",
+          "points": [
+            "Understanding Message Structure",
+            "Understanding Message Handling"
+          ]
+        },
+        {
+          "title": "6. SWIFT GPI & Innovations",
+          "points": [
+            "SWIFT GPI (Global Payments Innovation)",
+            "GPI Instant, Payment Pre-validation, Case Resolution, Stop and Recall"
+          ]
+        },
+        {
+          "title": "7. Introduction to ISO 20022 (MX Messages)",
+          "points": [
+            "Need for MX Messages and the Three Layers",
+            "MT to MX Messages – What are the Changes?",
+            "PAIN (Payment Initiation Messages)",
+            "PACS (Payments Clearing and Settlement) and CAMT (Cash Management)"
+          ]
+        },
+        {
+          "title": "8. MX Message Deep Dive",
+          "points": [
+            "Try out this mini interview on SWIFT",
+            "Understanding MT to MX Message Changes",
+            "Understanding MX Messages Use",
+            "Understanding Payment Groups",
+            "CBPR+ Phase 1 Migration",
+            "CBPR+ Migration (Post November 2025)"
+          ]
+        },
+        {
+          "title": "9. Roles & Data Structure in MX",
+          "points": [
+            "Agent and Party Roles in SWIFT MX",
+            "The Group Header Block",
+            "The Credit Transfer Transaction Information Block",
+            "Credit Transfer Block – Parties and Agents"
+          ]
+        }
       ]
     },
     {
       "id": 3,
       "title": "Beginner's Guide - SWIFT Message Types - MT and MX ISO 20022",
       "subtitle": "SWIFT MT/MX Message Flow with Examples & MT vs MX Mapping",
+      "contentSubTitle": "Begin your Payments Domain journey with Payment basics, SWIFT MT/ MX Message Flow with examples, MT vs MX Field Mapping",
       "description": "Start your payments journey with SWIFT MT/MX messages, payment basics, ISO 20022 migration, and real message flow examples.",
       "duration": "8 hours",
       "sessionType": "Live Session",
@@ -78,12 +214,111 @@
         "Understand pacs.008 Message Elements with Detailed Examples",
         "Learn MT vs MX Field Mapping and Message Transformation",
         "Explore SWIFT GPI and Latest Developments in Global Payments"
+      ],
+
+      "courseData": [
+        {
+          "title": "Basics of Payments & SWIFT Overview",
+          "points": [
+            "Basics of Payment Systems, Basics of SWIFT, SWIFT Code, SWIFT FIN and GPA",
+            "SWIFT MT Message Structure, Categories and Guidelines",
+            "MT 103 Serial and Cover Method with message examples",
+            "MT Category 2 and Category 9 Messages",
+            "SWIFT ISO 20022 MX messages with message flows | Agents and Parties in MX",
+            "SWIFT Payment Groups and Migration Timelines",
+            "Pacs.008 message elements in details with message example",
+            "MT vs MX Field mapping",
+            "SWIFT GPI and latest developments"
+          ]
+        },
+        {
+          "title": "1. Introduction to SWIFT",
+          "points": [
+            "Introduction",
+            "SWIFT, SWIFTNet and SWIFT Code / BIC",
+            "SWIFT FIN and GPA Messages and MT Message Structure",
+            "SWIFT Message Categories and Rules / Guidelines",
+            "Try out this mini interview on SWIFT"
+          ]
+        },
+        {
+          "title": "2. Payments Flow Basics",
+          "points": [
+            "What is Clearing, Settlement and Messaging?",
+            "Correspondent Accounts and RMA"
+          ]
+        },
+        {
+          "title": "3. SWIFT MT Messages – Core Concepts",
+          "points": [
+            "Cat 1 – MT101 and MT102",
+            "MT103 – Overview of Serial and Cover Methods",
+            "MT103 Cover Method Example",
+            "MT103 Serial Method Example",
+            "Cat 2 Messages",
+            "Cat 9 Messages",
+            "SWIFT GPA Messages / Possible Duplicate Emission (PDE/PDM) / Message Retrieval"
+          ]
+        },
+        {
+          "title": "4. Message Flow Understanding",
+          "points": [
+            "Understanding Message Flows 1",
+            "Understanding Message Flows 2",
+            "Understanding Message Flows 3",
+            "Understanding Message Flows 4"
+          ]
+        },
+        {
+          "title": "5. Message Processing & Structure",
+          "points": [
+            "Understanding Message Structure",
+            "Understanding Message Handling"
+          ]
+        },
+        {
+          "title": "6. SWIFT GPI & Innovations",
+          "points": [
+            "SWIFT GPI (Global Payments Innovation)",
+            "GPI Instant, Payment Pre-validation, Case Resolution, Stop and Recall"
+          ]
+        },
+        {
+          "title": "7. Introduction to ISO 20022 (MX Messages)",
+          "points": [
+            "Need for MX Messages and the Three Layers",
+            "MT to MX Messages – What are the Changes?",
+            "PAIN (Payment Initiation Messages)",
+            "PACS (Payments Clearing and Settlement) and CAMT (Cash Management)"
+          ]
+        },
+        {
+          "title": "8. MX Message Deep Dive",
+          "points": [
+            "Try out this mini interview on SWIFT",
+            "Understanding MT to MX Message Changes",
+            "Understanding MX Messages Use",
+            "Understanding Payment Groups",
+            "CBPR+ Phase 1 Migration",
+            "CBPR+ Migration (Post November 2025)"
+          ]
+        },
+        {
+          "title": "9. Roles & Data Structure in MX",
+          "points": [
+            "Agent and Party Roles in SWIFT MX",
+            "The Group Header Block",
+            "The Credit Transfer Transaction Information Block",
+            "Credit Transfer Block – Parties and Agents"
+          ]
+        }
       ]
     },
     {
       "id": 4,
       "title": "Introduction to Cross-Border Payments",
       "subtitle": "Master the Fundamentals of Global Payment Systems",
+      "contentSubTitle": "A comprehensive course covering all aspects of Cross border payments.",
       "description": "Learn correspondent banking, SWIFT standards, MT103 flows, foreign exchange concepts, and cross-border payment systems.",
       "duration": "8 hours",
       "sessionType": "Live Session",
@@ -103,12 +338,99 @@
         "Explore SWIFT Messages Used in Cross-Border Payments",
         "Learn the Basics of the Foreign Exchange Market",
         "Understand Serial and Cover Payment Methods with Practical Examples"
+      ],
+
+      "courseData": [
+        {
+          "title": "Core Cross Border Payments Concepts",
+          "points": [
+            "Understand cross border payments",
+            "Understand correspondent banking",
+            "Understand how Payment system models work",
+            "Understand SWIFT messages used in cross border payments",
+            "Understand foreign exchange market",
+            "Understand the serial and cover payment methods used in cross border payments"
+          ]
+        },
+        {
+          "title": "1. Course Introduction",
+          "points": [
+            "Welcome",
+            "Why this course?",
+            "Course Structure",
+            "Value Adds",
+            "About me",
+            "Overview",
+            "Quiz"
+          ]
+        },
+        {
+          "title": "2. Payment Systems Fundamentals",
+          "points": [
+            "Payment System Models – Type 1 and Type 2",
+            "Anatomy of Payment System",
+            "Quiz"
+          ]
+        },
+        {
+          "title": "3. Correspondent Banking Basics",
+          "points": [
+            "What is Correspondent Banking?",
+            "Correspondent Account Relationship",
+            "Unilateral Account Relationship",
+            "Bilateral Account Relationship",
+            "Usage of Correspondent Accounts",
+            "Correspondent Network",
+            "Quiz"
+          ]
+        },
+        {
+          "title": "4. SWIFT Network Overview",
+          "points": ["SWIFT Network and Standards", "Quiz"]
+        },
+        {
+          "title": "5. Foreign Exchange & Currency Concepts",
+          "points": [
+            "Currency Types",
+            "Foreign Exchange Market",
+            "Foreign Exchange",
+            "Quiz"
+          ]
+        },
+        {
+          "title": "6. Concept Recap",
+          "points": ["Key Learnings from Core Concepts"]
+        },
+        {
+          "title": "7. SWIFT Identification",
+          "points": ["SWIFT BIC Code", "Quiz"]
+        },
+        {
+          "title": "8. SWIFT Message Fundamentals",
+          "points": [
+            "Message Categories",
+            "Message Identifiers",
+            "Message Blocks",
+            "Message Block Elements",
+            "Quiz"
+          ]
+        },
+        {
+          "title": "9. SWIFT MT103 Deep Dive",
+          "points": [
+            "MT103 Description",
+            "MT103 Message Format",
+            "Sample MT103",
+            "Quiz"
+          ]
+        }
       ]
     },
     {
       "id": 5,
       "title": "Payment Systems, SWIFT Messaging & ISO 20022 – Complete Guide",
       "subtitle": "Hands-On MT103, MT202 & pacs.008 Simulators",
+      "contentSubTitle": "TOOLS to practice MT103, MT202, pacs.008 &amp; MT103→pacs.008; learn payments end to end and decode SWIFT/ISO message rules.",
       "description": "Practice SWIFT and ISO 20022 message creation with interactive tools, MT→MX mapping, reconciliation and payment investigations.",
       "duration": "8 hours",
       "sessionType": "Interactive Workshop",
@@ -130,6 +452,108 @@
         "Track Payment Lifecycle Events and Reconcile Transactions Using MT910, MT950, camt.053 and camt.054",
         "Simulate Real-World Payment Investigations and Troubleshoot Failed Transactions",
         "Learn How SWIFT, ACH, RTGS and FedNow Work in Modern Payment Infrastructure"
+      ],
+      "courseData": [
+        {
+          "title": "Core Learning Outcomes",
+          "points": [
+            "Build real payment messages using MT103, MT202 & pacs.008 with interactive simulators",
+            "Simulate MT103 → pacs.008 conversion using ISO 20022 mapping tools",
+            "Decode SWIFT MT messages like MT103, MT202, MT940, MT950",
+            "Understand clearing, settlement, correspondent and intermediary banking",
+            "Map SWIFT MT messages to ISO 20022 MX formats like pacs.008",
+            "Track payment lifecycle using MT910, MT950, camt.053, camt.054",
+            "Simulate payment investigations and troubleshoot failures",
+            "Learn SWIFT, ACH, RTGS and FedNow payment systems"
+          ]
+        },
+        {
+          "title": "1. Course Introduction & Payment Basics",
+          "points": [
+            "Course Introduction",
+            "How Money Moves Between Banks – The Basics",
+            "What is a Correspondent Bank?",
+            "What is an Intermediary Bank?",
+            "Nostro, Vostro & Loro Accounts – Holding Foreign Balances",
+            "Clearing vs Settlement – What Happens Between Sending & Receiving?",
+            "Retail vs Wholesale Payments – How They Differ",
+            "Domestic vs Cross-Border Payments – Settlement Complexities"
+          ]
+        },
+        {
+          "title": "2. Settlement Systems & Risk Management",
+          "points": [
+            "Gross Settlement – High-Value Payments Processing",
+            "Net Settlement – Bulk Payments Processing",
+            "FX Settlement Risk (Herstatt Risk)",
+            "Liquidity Risk – Cash Flow Management"
+          ]
+        },
+        {
+          "title": "3. Payment Infrastructure & Networks",
+          "points": [
+            "SWIFT – Global Messaging Network",
+            "ACH – Automated Clearing House",
+            "RTGS – Real-Time Gross Settlement",
+            "FedNow – US Real-Time Payments System",
+            "Quick Check"
+          ]
+        },
+        {
+          "title": "4. SWIFT MT Messages Fundamentals",
+          "points": [
+            "Overview of SWIFT MT Messaging",
+            "Introduction to MT Message Structure",
+            "Key MT Messages (MT103, MT202, MT940, MT950)"
+          ]
+        },
+        {
+          "title": "5. SWIFT MT Messages Hands-On",
+          "points": [
+            "MT103 Field-by-Field Breakdown",
+            "MT103 Message Builder Simulation",
+            "MT202 Field-by-Field Breakdown",
+            "MT202 Message Builder Simulation",
+            "SWIFT Message Validation Rules",
+            "Fix Errors in MT103 Exercise",
+            "Quick Check"
+          ]
+        },
+        {
+          "title": "6. ISO 20022 & MX Messages",
+          "points": [
+            "What is ISO 20022 and why migration is happening",
+            "Key Messages: pacs.008, pacs.009, camt.053, camt.054",
+            "pacs.008 Message Builder Simulation",
+            "MT103 vs pacs.008 Field Mapping",
+            "Migration Challenges & Best Practices",
+            "Convert MT103 to pacs.008 Exercise",
+            "Mapping Tool Hands-on",
+            "Quick Check"
+          ]
+        },
+        {
+          "title": "7. Cross-Border Payments & SWIFT GPI",
+          "points": [
+            "Cross-Border Payment Flow",
+            "SWIFT GPI Tracking & Transparency",
+            "Payment Lifecycle (Initiation to Settlement)",
+            "Intermediary Banks & Nostro/Vostro",
+            "Case Study: Delayed Payment Investigation",
+            "Quick Check"
+          ]
+        },
+        {
+          "title": "8. Reconciliation, Failures & Liquidity",
+          "points": [
+            "Bank Reconciliation Process",
+            "Payment Failure Reasons",
+            "Intraday Liquidity Management",
+            "Reconciliation Messages (MT940, MT950, camt.053, camt.054)",
+            "Match Payments Exercise",
+            "Quick Check"
+          ]
+        }
       ]
     }
   ]
